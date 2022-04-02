@@ -1,10 +1,10 @@
-import Card from 'react-bootstrap/Card'
+import { Card, Image} from 'react-bootstrap'
 
 function Background() {
     return (
-        <Card className="bg-dark text-white">
+        <Card className="text-black" style={{alignItems:"flex-end", backgroundColor:"#deedd6"}}>
             <Card.Img src="https://www.instacart.com/image-server/x428/www.instacart.com/assets/homepage/homepage_background_full_m3_cropped-8d2d286263821da7decd7c61fb1db1eb0e3dec13e0c356277d6d3cb7484c024a.jpg" 
-            alt="Card image" style={{ height: '428px', width:'347px' }} />
+            alt="Card image" style={{ height: "428px", width:"347px"}} fluid={true} />
             <Card.ImgOverlay>
                 <Card.Title>Card title</Card.Title>
                 <Card.Text>
